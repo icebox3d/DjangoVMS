@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for aircrafts in aircrafts %}
+
+        {{ aircrafts.icao }}
+        <br>
+        {{ aircrafts.type }}
+        <br>
+        {{ aircrafts.aircraftimage }}
+    {% endfor %}
+<br>
+    <P>There are {{ aircraftcount }} aircrafts in the fleet</p>
+
+{% endblock %}

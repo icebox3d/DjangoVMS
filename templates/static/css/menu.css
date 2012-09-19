@@ -1,0 +1,188 @@
+#menu {
+	padding: 0px;
+}
+
+#menu1 *
+{
+	padding: 0px;
+}
+
+#menu1 ul.menu
+{
+	float: left;
+	font-family: "Francois One", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 1000px;
+	height: 42px;
+	background: #0d6211;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	-webkit-box-shadow: 0px 0px 10px 0px #000000;
+	box-shadow: 0px 0px 10px 0px #000000;
+}
+
+	#menu1 ul.menu li
+	{
+		position: relative;
+		float: left;
+		list-style-type: none;
+	}
+	
+		#menu1 ul.menu li a
+		{
+			position: relative;
+			display: block;
+			line-height: 18px;
+			padding: 12px 20px;
+			text-decoration: none;
+			z-index: 100;
+			-webkit-transition: all 0.1s linear;
+			-moz-transition: all 0.1s linear;
+			-o-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+		}
+		
+			#menu1 ul.menu > li:first-child > a
+			{
+				border-left: 0;
+				-webkit-border-radius: 5px 0px 0px 5px;
+				border-radius: 5px 0px 0px 5px;
+				
+			}
+			
+			#menu1 ul.menu > li:last-child > a
+			{
+				border-right: 0;
+				-webkit-border-radius: 0px 5px 5px 0px;
+				border-radius: 0px 5px 5px 0px;
+			}
+
+/** Sub Menu - Tier 2 **/
+
+#menu1 ul.menu li ul.sub-menu
+{
+	position: relative;
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+	#menu1 ul.menu li:hover ul.sub-menu
+	{
+		display: block;
+		float: left;
+		position: absolute;
+		z-index: 200;
+		width: 140px;
+	}
+	
+		#menu1 ul.menu li ul.sub-menu > li:first-child
+		{
+			margin: 6px 0 0 0;
+		}
+		
+		#menu1 ul.menu li ul.sub-menu li a
+		{
+			width: 140px;
+			display: block;
+			-webkit-border-radius: 5px 5px 5px 5px;
+				border-radius: 5px 5px 5px 5px;
+		}
+		
+			#menu1 ul.menu li ul.sub-menu li:first-child > a
+			{
+				border-bottom: 0;
+				-webkit-border-radius: 5px 5px 5px 5px;
+				border-radius: 5px 5px 5px 5px;
+			}
+			
+			#menu1 ul.menu li ul.sub-menu li:last-child > a
+			{
+				border-bottom: 0;
+				-webkit-border-radius: 5px 5px 5px 5px;
+				border-radius: 5px 5px 5px 5px;
+			}
+			
+		#menu1 ul.menu li ul.sub-menu li a:hover
+		{
+			width: 140px;
+			display: block;
+		}
+	
+/** Sub Menu - Tier 3 **/
+
+#menu1 ul.menu li ul.sub-menu li ul
+{
+	position: relative;
+	display: none;
+	left: 180px;
+}
+
+		#menu1 ul.menu li ul.sub-menu li ul li
+		{
+			margin: 0 0 0 6px;
+		}
+
+	#menu1 ul.menu li ul.sub-menu li:hover ul
+	{
+		display: block;
+		float: left;
+		position: absolute;
+		top: 0;
+	}
+
+		#menu1 ul.menu li ul.sub-menu li ul li a
+		{
+			width: 140px;
+			display: block;
+		}
+
+		/** Colour Styles **/
+
+#menu1 ul.menu li a
+{
+	background: #0d6211;
+	color: #FFF;
+}
+
+#menu1 ul.menu > li > a
+{
+	border-left: 1px solid #0f7214;
+	border-right: 1px solid #0f7214;
+}
+
+	#menu1 ul.menu li:hover > a, #menu1 ul.menu li a:hover
+	{
+		color: #0d6211;
+		background: #FFF;
+	}
+
+#menu1 ul.menu li ul.sub-menu li a
+{
+	border-top: 1px solid #0f7214;
+	border-bottom: 1px solid #0f7214;
+}
+
+/** Arrow Styles **/
+
+#menu1 ul.menu > li > a.haschild
+{
+	padding-right: 30px;
+	background: #0d6211 url("../images/down.png") no-repeat right center;
+}
+
+	#menu1 ul.menu > li:hover > a.haschild
+	{
+		background: #FFF url("../images/down-hover.png") no-repeat right center;
+	}
+
+#menu1 ul.menu li ul.sub-menu li a.haschild
+{
+	background: #0d6211 url("../images/right.png") no-repeat right center;
+}
+
+	#menu1 ul.menu li:hover ul.sub-menu li:hover a.haschild
+	{
+		background: #FFF url("../images/right-hover.png") no-repeat right center;
+	}
